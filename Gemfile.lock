@@ -21,6 +21,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  haml
-  jeweler
-  sinatra
+  haml (= 3.1.3)
+  jeweler (= 1.6.4)
+  sinatra (= 1.3.1)
