@@ -1,8 +1,8 @@
 source :rubygems
 
-gem 'sinatra', '= 1.3.1'
-gem 'haml', '= 3.1.3'
+gem 'sinatra', '~> 1.0'
+gem 'haml', '~> 3.0'
 
 group :development do
-  gem 'jeweler', '= 1.6.4'
+  gem 'jeweler', '~> 1.0'
 end
