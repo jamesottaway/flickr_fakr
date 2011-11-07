@@ -24,11 +24,11 @@ Gem::Specification.new do |s|
     "VERSION",
     "config.ru",
     "flickr_fakr.gemspec",
-    "flickr_fakr.rb",
-    "views/flickr.auth.getFrob.json.haml",
-    "views/flickr.auth.getToken.json.haml",
-    "views/flickr.reflection.getMethods.json.haml",
-    "views/flickr.test.login.json.haml"
+    "lib/flickr_fakr/flickr_fakr.rb",
+    "lib/flickr_fakr/views/flickr.auth.getFrob.json.haml",
+    "lib/flickr_fakr/views/flickr.auth.getToken.json.haml",
+    "lib/flickr_fakr/views/flickr.reflection.getMethods.json.haml",
+    "lib/flickr_fakr/views/flickr.test.login.json.haml"
   ]
   s.homepage = %q{http://github.com/jamesottaway/flickr_fakr}
   s.licenses = [%q{MIT}]
