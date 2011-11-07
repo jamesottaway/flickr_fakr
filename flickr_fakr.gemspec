@@ -4,13 +4,13 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{flickr-fakr}
+  s.name = %q{flickr_fakr}
   s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{James Ottaway}]
   s.date = %q{2011-11-07}
-  s.description = %q{Use flickr-fakr to help you write functional tests without having a dependency on Flickr}
+  s.description = %q{Use flickr_fakr to help you write functional tests without having a dependency on Flickr}
   s.email = %q{james@ottaway.mp}
   s.extra_rdoc_files = [
     "LICENSE.txt"
@@ -23,14 +23,14 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "config.ru",
-    "flickr-fakr.gemspec",
-    "flickr-fakr.rb",
+    "flickr_fakr.gemspec",
+    "flickr_fakr.rb",
     "views/flickr.auth.getFrob.json.haml",
     "views/flickr.auth.getToken.json.haml",
     "views/flickr.reflection.getMethods.json.haml",
     "views/flickr.test.login.json.haml"
   ]
-  s.homepage = %q{http://github.com/jamesottaway/flickr-fakr}
+  s.homepage = %q{http://github.com/jamesottaway/flickr_fakr}
   s.licenses = [%q{MIT}]
   s.require_paths = [%q{lib}]
   s.rubygems_version = %q{1.8.8}

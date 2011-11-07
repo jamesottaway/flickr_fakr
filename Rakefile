@@ -13,11 +13,11 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  gem.name = "flickr-fakr"
-  gem.homepage = "http://github.com/jamesottaway/flickr-fakr"
+  gem.name = "flickr_fakr"
+  gem.homepage = "http://github.com/jamesottaway/flickr_fakr"
   gem.license = "MIT"
   gem.summary = %Q{a fake version of the Flickr API}
-  gem.description = %Q{Use flickr-fakr to help you write functional tests without having a dependency on Flickr}
+  gem.description = %Q{Use flickr_fakr to help you write functional tests without having a dependency on Flickr}
   gem.email = "james@ottaway.mp"
   gem.authors = ["James Ottaway"]
 end

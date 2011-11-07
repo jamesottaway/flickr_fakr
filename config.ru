@@ -1,2 +1,2 @@
-require './flickr-fakr'
+require './flickr_fakr'
 run FlickrFakr
