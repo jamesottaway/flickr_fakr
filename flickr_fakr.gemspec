@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.date = %q{2011-11-07}
   s.description = %q{Use flickr_fakr to help you write functional tests without having a dependency on Flickr}
   s.email = %q{james@ottaway.mp}
+  s.executables = [%q{flickr_fakr}]
   s.extra_rdoc_files = [
     "LICENSE.txt"
   ]
@@ -22,6 +23,7 @@ Gem::Specification.new do |s|
     "LICENSE.txt",
     "Rakefile",
     "VERSION",
+    "bin/flickr_fakr",
     "config.ru",
     "flickr_fakr.gemspec",
     "lib/flickr_fakr/flickr_fakr.rb",

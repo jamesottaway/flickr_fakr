@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+begin
+  $: << File.dirname(__FILE__)+'/../lib'
+  require 'flickr_fakr/flickr_fakr.rb'
+  FlickrFakr.run!
+rescue LoadError
+  require 'rubygems'
+  path = File.expand_path '../../lib', __FILE__
+  $:.unshift(path) if File.directory?(path) && !$:.include?(path)
+  require 'flickr_fakr/flickr_fakr.rb'
+end
