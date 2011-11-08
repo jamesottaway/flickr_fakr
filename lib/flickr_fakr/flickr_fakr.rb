@@ -1,5 +1,4 @@
 require 'sinatra/base'
-require 'haml'
 
 class FlickrFakr < Sinatra::Base
   get '/' do
@@ -15,6 +14,6 @@ class FlickrFakr < Sinatra::Base
     request.body.rewind
     request.body.read.split('&').each { |arg| args[arg.split('=').first] = arg.split('=').last }
     view = "#{args['method']}.#{args['format']}"
-    haml view.to_sym
+    erb view.to_sym
   end
 end
