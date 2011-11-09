@@ -30,7 +30,7 @@ RSpec::Core::RakeTask.new
 
 require 'timeout'
 task :acceptance do
-  pid = Process.spawn 'rackup -p 9292'
+  pid = Process.spawn 'rackup -p 9292 -D'
 
   trap("INT") {
     Process.kill(9, pid) rescue Errno::ESRCH
