@@ -10,10 +10,7 @@ class FlickrFakr < Sinatra::Base
   end
 
   post '/services/rest/' do
-    args = {}
-    request.body.rewind
-    request.body.read.split('&').each { |arg| args[arg.split('=').first] = arg.split('=').last }
-    view = "#{args['method']}.#{args['format']}"
+    view = params[:method]+'.'+params[:format]
     erb view.to_sym
   end
 end
