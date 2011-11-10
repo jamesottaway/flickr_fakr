@@ -26,9 +26,14 @@ end
 Jeweler::RubygemsDotOrgTasks.new
 
 require 'rspec/core/rake_task'
-RSpec::Core::RakeTask.new
+namespace :acceptance do
+  RSpec::Core::RakeTask.new do |c|
+    c.pattern = './spec/acceptance/**/*_spec.rb'
+  end
+end
 
 require 'timeout'
+desc 'Bootstrap and run the acceptance specs'
 task :acceptance do
   pid = Process.spawn 'rackup -p 9292 -D'
 
@@ -42,7 +47,7 @@ task :acceptance do
     sleep 1
   end
   
-  Rake::Task['spec'].invoke
+  Rake::Task['acceptance:spec'].invoke
   
   Process.kill 9, pid
 end
