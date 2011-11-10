@@ -12,10 +12,13 @@ GEM
       git (>= 1.2.5)
       rake
     json (1.6.1)
+    mime-types (1.17.2)
     rack (1.3.5)
     rack-protection (1.1.4)
       rack
     rake (0.8.7)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rspec (2.7.0)
       rspec-core (~> 2.7.0)
       rspec-expectations (~> 2.7.0)
@@ -37,5 +40,6 @@ DEPENDENCIES
   flickraw (= 0.8.4)
   flickraw-cached
   jeweler (~> 1.0)
+  rest-client
   rspec
   sinatra (~> 1.0)
