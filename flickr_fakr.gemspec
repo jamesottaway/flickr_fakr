@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{flickr_fakr}
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{James Ottaway}]
-  s.date = %q{2011-11-09}
+  s.date = %q{2011-12-04}
   s.description = %q{Use flickr_fakr to help you write functional tests without having a dependency on Flickr}
   s.email = %q{james@ottaway.mp}
   s.executables = [%q{flickr_fakr}]
@@ -34,7 +34,10 @@ Gem::Specification.new do |s|
     "lib/flickr_fakr/views/flickr.auth.getToken.json.erb",
     "lib/flickr_fakr/views/flickr.reflection.getMethods.json.erb",
     "lib/flickr_fakr/views/flickr.test.login.json.erb",
-    "spec/reflection/getMethods_spec.rb",
+    "spec/acceptance/auth_getFrob_spec.rb",
+    "spec/acceptance/auth_getToken_spec.rb",
+    "spec/acceptance/reflection_getMethods_spec.rb",
+    "spec/acceptance/test_login_spec.rb",
     "spec/spec_helper.rb",
     "spec/support/integrate-flickr-fakr.rb"
   ]
