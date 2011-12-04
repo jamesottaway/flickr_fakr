@@ -1,6 +1,8 @@
 require 'sinatra/base'
 
 class FlickrFakr < Sinatra::Base
+  set :views, File.dirname(__FILE__)+'/views'
+
   get '/' do
     'Welcome to Flickr Fakr!'
   end
